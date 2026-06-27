@@ -98,3 +98,30 @@ public class House {
     {
     }
 }
+
+System.out.println(1);
+System.out.println("Amigo");
+System.out.println("Risha&Amigo");
+
+System.out.println("Amigo");
+System.out.println("The");
+System.out.println("Best");
+
+System.out.print("Amigo");
+System.out.println("The");
+System.out.println("Best");
+
+System.out.print("Amigo");
+System.out.print("The");
+System.out.print("Best");
+
+
+public class Amigo
+{
+    public static void main (String[] args)
+    {
+        System.out.print("Amigo ");
+        System.out.print("The ");
+        System.out.print("Best");
+    }
+}
