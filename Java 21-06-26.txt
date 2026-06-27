@@ -21,3 +21,80 @@ int a=5, b=10, c=a+b;
 
 int a=(2+2)*2;
 int b=(6-3) / (9-6);
+int c =(-2) * (-3); //в переменной будет значение 6
+int d = 3 / 0; При выполнении этой команды возникнет ошибка, и программа завершится.
+
+int a=1;
+int b=2;
+int c=a*b+2; 
+
+int a = 5/2; // В переменной a будет значение 2
+int b = 20/3; // В переменной b будет значение 6
+int c = -6/5; // В переменной с будет значение -1
+int d = 1/2; В переменной d будет значение 0
+
+int a = 5 % 2; // В переменной a будет значение 1
+int b = 20 % 4; // В переменной b будет значение 0
+int c = 9 % 5; // В переменной c будет значение 4
+int d = 1 % 2; // В переменной d будет 1
+
+(a%2) == 0
+a ++; инкремент
+a --; декремент
+
+String name;
+String message;
+String text;
+
+String имя1, имя2, имя3;
+String name = "Аня";
+String city = "New York";
+String message = "Hello!";
+String имя1 = "значение1", имя2 = "значение2", имя3 = "значение";
+String name = "Аня", city = "New York", message = "Hello!";
+
+System.out.println(name);
+
+String name = "1"+"1"=1
+String message = "Hello!" + city + name +city;
+String quote = "Он сказал: \"Здравствуйте! \" ";
+System.out.println(quote); //Он сказал: "Здравствуйте!"
+
+\n Перенос строки(newline)
+\t Табуляция (отступ)
+\\ означает \
+\" Кавычки внутри строки
+
+String multiline = "Строка 1 \n Стройка 2";
+System.out.println(multiline);
+
+System.out.println("Робот - друг человека");
+System.out.println("Вывод строки");
+
+класс содержит методы или функции, а метод содержит команды
+
+public class House {
+    тело класса
+}
+
+public class House {
+    переменная A 
+    переменная z
+    Метод 1
+    Метод Z
+}
+
+public class House {
+    int a;
+    int b;
+    public static void
+    main (String[] args) { System.out.print(1); }
+    public static double
+    pi () { return 3.14; }
+}
+
+public class House {
+    public static void main (String[] args)
+    {
+    }
+}
