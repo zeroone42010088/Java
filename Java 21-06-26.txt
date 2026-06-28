@@ -125,3 +125,17 @@ public class Amigo
         System.out.print("Best");
     }
 }
+
+int a;
+String a;
+double a;
+
+int i;
+int a,b;
+int x;
+
+i=3;
+a=1;
+b=a+1;
+x=3;
+x=x+1;
