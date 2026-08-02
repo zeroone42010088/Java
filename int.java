@@ -54,3 +54,8 @@ int x = 5;
 x = x+1; значение будет 6
 x = x+1; значение будет 7
 x = x+1; значение будет 8
+(a%2)==0;
+
+SELECT COUNT(*) AS count
+FROM Student
+WHERE first_name = 'Anna';
