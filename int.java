@@ -59,3 +59,9 @@ x = x+1; значение будет 8
 SELECT COUNT(*) AS count
 FROM Student
 WHERE first_name = 'Anna';
+
+SELECT COUNT(*) As COUNT 
+FROM Trip
+WHERE plane = 'TU-154';
+
+String имя1, имя2, имя3;
