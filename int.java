@@ -65,3 +65,12 @@ FROM Trip
 WHERE plane = 'TU-154';
 
 String имя1, имя2, имя3;
+
+String name = "Аня";
+String city = "New York";
+String message = "Hello";
+
+SELECT name, price
+FROM products
+WHERE name LIKE '%Air%'
+ORDER BY price DESC
