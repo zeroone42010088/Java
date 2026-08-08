@@ -77,3 +77,9 @@ ORDER BY price DESC
 
 SELECT name, description
 FROM products
+
+
+SELECT id AS "Артикул", 
+      name AS "Название"
+FROM products
+ORDER BY id ASC;
