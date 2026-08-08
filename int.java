@@ -74,3 +74,6 @@ SELECT name, price
 FROM products
 WHERE name LIKE '%Air%'
 ORDER BY price DESC
+
+SELECT name, description
+FROM products
