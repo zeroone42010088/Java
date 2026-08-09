@@ -83,3 +83,51 @@ SELECT id AS "Артикул",
       name AS "Название"
 FROM products
 ORDER BY id ASC;
+
+String text;
+String a,b,c;
+String city = "New York";
+String name = "А" + "Б" = АБ
+
+String message = "Hello" + city + name + city;
+String quote = "Он сказал: \"Здравствуйте! \" ";
+System.out.println(quote); //Он сказал: "Здравствуйте!"
+String phrase = "\"Фраза в ковычках \" ";
+
+\n - перенос стройки (newline)
+\t - табуляция (отступ)
+\\ - Буквально \
+\" - Ковычки внутри строки
+
+String multiline = "Строка 1 \n Строка 2";
+System.out.println(multiline);
+
+str.length() Длина строки
+str.toUpperCase() В верхний регистр
+str.toLowerCase() В нижний регистр
+str.trim()
+
+String name="Андрей";
+int length = name.length();
+System.out.println(length); 
+
+String messy = "  hello  " 
+System.out.println(messy.trim());
+
+String product = "  iPhone 17 Pro  ";
+String category = "SMARTPHONES";
+String price = "120000";
+
+String cleanProduct = product.trim();
+String lowerCategory = category.toLowerCase();
+
+int productLength = cleanProduct.length();
+
+String wholeText =
+        "Товар: " + cleanProduct + "\n" +
+        "Категория: " + lowerCategory + "\n" +
+        "Цена: " + price + " руб.\n" +
+        "Название содержит " + productLength + " символов";
+
+System.out.print(wholeText);
+       
