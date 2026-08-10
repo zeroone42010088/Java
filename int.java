@@ -130,4 +130,9 @@ String wholeText =
         "Название содержит " + productLength + " символов";
 
 System.out.print(wholeText);
+
+SELECT name, price, stock
+FROM products
+WHERE price < 500 OR stock = 0
+ORDER BY price, name DESC;
        
