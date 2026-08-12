@@ -135,4 +135,9 @@ SELECT name, price, stock
 FROM products
 WHERE price < 500 OR stock = 0
 ORDER BY price, name DESC;
+
+SELECT name, price
+FROM products
+ORDER BY price ASC
+LIMIT 1; 
        
