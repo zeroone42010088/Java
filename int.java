@@ -151,3 +151,5 @@ FROM products
 WHERE (name ILIKE 'К%' OR name ILIKE 'С%') AND price BETWEEN 200 AND 3000 AND stock > 0
 ORDER BY category ASC, price DESC
 LIMIT 10;       
+
+String nameShort = name.trim(); String lowercity = city.toLowerCase(); String upperprofession = profession.toUpperCase(); System.out.print("Пользователь:" + nameShort + "\n" + "Город:" + lowercity + "\n" + "Профессия:" + upperprofession );
