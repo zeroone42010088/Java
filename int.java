@@ -140,4 +140,14 @@ SELECT name, price
 FROM products
 ORDER BY price ASC
 LIMIT 1; 
-       
+
+SELECT name, category, price, stock
+FROM products
+WHERE stock < 8 AND category IN ('Электроника', 'Спорт') AND price > 500
+ORDER BY stock ASC, price DESC;
+
+SELECT *
+FROM products
+WHERE (name ILIKE 'К%' OR name ILIKE 'С%') AND price BETWEEN 200 AND 3000 AND stock > 0
+ORDER BY category ASC, price DESC
+LIMIT 10;       
