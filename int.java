@@ -158,3 +158,11 @@ SELECT name, category, price, stock FROM products WHERE category IN ('Книги
 
 String name = "Gleb"; //создаем переменную
 name = "Alex"; //изменяем существующую переменную
+
+int statusCode = 404;
+if (statusCode == 200) {
+    System.out.println("Test passed");
+}
+else {
+    System.out.println("Test failed");
+}
