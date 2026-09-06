@@ -155,3 +155,6 @@ LIMIT 10;
 String nameShort = name.trim(); String lowercity = city.toLowerCase(); String upperprofession = profession.toUpperCase(); System.out.print("Пользователь:" + nameShort + "\n" + "Город:" + lowercity + "\n" + "Профессия:" + upperprofession );
 
 SELECT name, category, price, stock FROM products WHERE category IN ('Книги', 'Спорт', 'Прочее') AND price BETWEEN 300 and 2000 AND stock = "0" ORDER BY category ASC, price DESC LIMIT 10;
+
+String name = "Gleb"; //создаем переменную
+name = "Alex"; //изменяем существующую переменную
