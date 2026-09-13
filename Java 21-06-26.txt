@@ -140,3 +140,4 @@ b=a+1;
 x=3;
 x=x+1;
 
+int statusCode =  201; if (statusCode >=200 &&  statusCode <=299) {System.out.println("Sucess")} else {System.out.print("Failed")}
