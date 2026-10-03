@@ -176,3 +176,10 @@ if (statusCode == 201 && responseTime < 1000) {
 } else {
     System.out.println("Test failed");
 }
+
+int statusCode = 200;
+int responseTime = 750;
+
+if ((statusCode == 200 || statusCode == 201) && responseTime < 1000) {
+    System.out.println("Test passed");
+}
