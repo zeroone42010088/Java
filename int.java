@@ -183,3 +183,12 @@ int responseTime = 750;
 if ((statusCode == 200 || statusCode == 201) && responseTime < 1000) {
     System.out.println("Test passed");
 }
+
+boolean hasAccount = true;
+int age = 25;
+
+if (age >= 18 && hasAccount) {
+    System.out.println("Access granted");
+} else {
+    System.out.println("Access denied");
+}
