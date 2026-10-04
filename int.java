@@ -192,3 +192,6 @@ if (age >= 18 && hasAccount) {
 } else {
     System.out.println("Access denied");
 }
+
+for (int i=1; i <-5; i++) {
+    System.out.println(i);}
