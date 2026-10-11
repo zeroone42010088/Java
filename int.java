@@ -195,3 +195,17 @@ if (age >= 18 && hasAccount) {
 
 for (int i=1; i <-5; i++) {
     System.out.println(i);}
+
+
+GameAboutPools/
+├── .agents/
+│   └── skills/
+│       └── qa-test-analysis/
+│           ├── SKILL.md
+│           ├── assets/
+│           ├── references/
+│           └── scripts/
+├── src/
+├── pom.xml
+├── README.md
+└── ...
