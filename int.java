@@ -210,7 +210,7 @@ GameAboutPools/
 ├── README.md
 └── ...
 
-int[] statusCodes = {}200, 404, 201, 500, 200};
+int[] statusCodes = {200, 404, 201, 500, 200};
 for (int i = 0; i < statusCodes.leght; i++) {
   if (statusCodes[i] >= 200 or statusCodes[i] <=299) 
     {System.out.println(statusCodes[i] + "Sucess");
@@ -218,3 +218,4 @@ for (int i = 0; i < statusCodes.leght; i++) {
   else {System.out.println(statusCodes[i] + "Error");
   }
 }
+
