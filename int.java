@@ -219,3 +219,10 @@ for (int i = 0; i < statusCodes.leght; i++) {
   }
 }
 
+int[] responseTimes = {450, 1200, 800, 1500, 300};
+
+for (int i = 0; i < responseTimes.length; i++) {
+    if (responseTimes[i] > 1000) {
+        System.out.println(responseTimes[i]);
+    }
+}
