@@ -226,3 +226,15 @@ for (int i = 0; i < responseTimes.length; i++) {
         System.out.println(responseTimes[i]);
     }
 }
+
+int[] statusCodes = {200, 404, 500, 201, 503, 200, 400};
+
+int errorCount = 0;
+
+for (int i = 0; i < statusCodes.length; i++) {
+    if (statusCodes[i] >= 500 && statusCodes[i] <= 599) {
+        errorCount++;
+    }
+}
+
+System.out.println("Server errors: " + errorCount);
