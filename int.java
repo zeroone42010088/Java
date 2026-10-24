@@ -238,3 +238,14 @@ for (int i = 0; i < statusCodes.length; i++) {
 }
 
 System.out.println("Server errors: " + errorCount);
+
+
+int[] statusCodes = {200, 404, 500, 201, 503, 200, 400}; 
+int successCount = 0;
+for (int i = 0; i < statusCodes.length; i++) {
+	if (statusCodes[i] >= 200 && statusCodes[i] <= 299 )
+ 	  {
+	  successCount++;
+	  }
+}
+System.out.println("Successful responses: " + successCount);
