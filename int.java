@@ -249,3 +249,8 @@ for (int i = 0; i < statusCodes.length; i++) {
 	  }
 }
 System.out.println("Successful responses: " + successCount);
+
+
+public static boolean isServerError(int statusCode) {
+    return statusCode >= 500 && statusCode <= 599;
+}
