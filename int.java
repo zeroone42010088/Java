@@ -263,3 +263,14 @@ public static int calculateDelay(int responseTime) {
         return responseTime - 1000;
     }
 }
+
+
+public static String getStatusMessage(int statusCode) {
+    if (statusCode == 200) {
+        return "Success";
+    } else if (statusCode == 404) {
+        return "Not found";
+    } else {
+        return "Unknown status";
+    }
+}
