@@ -254,3 +254,12 @@ System.out.println("Successful responses: " + successCount);
 public static boolean isServerError(int statusCode) {
     return statusCode >= 500 && statusCode <= 599;
 }
+
+
+public static int calculateDelay(int responseTime) {
+    if (responseTime <= 1000) {
+        return 0;
+    } else {
+        return responseTime - 1000;
+    }
+}
