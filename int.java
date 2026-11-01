@@ -279,3 +279,15 @@ public static String getStatusMessage(int statusCode) {
 public static boolean isValidStatus(int statusCode) {
     return statusCode == 200 || statusCode == 201;
 }
+
+public static int countSuccessfulResponses(int[] statusCodes) {
+    int count = 0;
+
+    for (int i = 0; i < statusCodes.length; i++) {
+        if (statusCodes[i] == 200 || statusCodes[i] == 201) {
+            count++;
+        }
+    }
+
+    return count;
+}
