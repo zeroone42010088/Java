@@ -274,3 +274,8 @@ public static String getStatusMessage(int statusCode) {
         return "Unknown status";
     }
 }
+
+
+public static boolean isValidStatus(int statusCode) {
+    return statusCode == 200 || statusCode == 201;
+}
