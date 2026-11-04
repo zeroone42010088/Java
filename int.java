@@ -291,3 +291,15 @@ public static int countSuccessfulResponses(int[] statusCodes) {
 
     return count;
 }
+
+public static int countServerErrors(int[] statusCodes) {
+    int count = 0;
+
+    for (int i = 0; i < statusCodes.length; i++) {
+        if (statusCodes[i] >= 500 && statusCodes[i] <= 599) {
+            count++;
+        }
+    }
+
+    return count;
+}
