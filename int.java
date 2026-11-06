@@ -303,3 +303,16 @@ public static int countServerErrors(int[] statusCodes) {
 
     return count;
 }
+
+
+public static int countSuccessfulResponses(int[] statusCodes) {
+    int count = 0;
+
+    for (int i = 0; i < statusCodes.length; i++) {
+        if (isSuccess(statusCodes[i])) {
+            count++;
+        }
+    }
+
+    return count;
+}
