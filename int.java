@@ -333,3 +333,16 @@ public static int countSuccessfulResponses(int[] statusCodes) {
 
     return count;
 }
+
+
+public static int countFailedResponses(int[] statusCodes) {
+    int count = 0;
+
+    for (int i = 0; i < statusCodes.length; i++) {
+        if (!isSuccess(statusCodes[i])) {
+            count++;
+        }
+    }
+
+    return count;
+}
