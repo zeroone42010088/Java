@@ -346,3 +346,15 @@ public static int countFailedResponses(int[] statusCodes) {
 
     return count;
 }
+
+public static int countSlowResponses(int[] responseTimes) {
+    int count = 0;
+
+    for (int i = 0; i < responseTimes.length; i++) {
+        if (responseTimes[i] > 1000) {
+            count++;
+        }
+    }
+
+    return count;
+}
