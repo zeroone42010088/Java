@@ -370,3 +370,16 @@ FROM api_logs
 WHERE status_code BETWEEN 500 AND 599
    OR response_time_ms > 1000
 ORDER BY response_time_ms DESC;
+
+
+public static int countSlowResponses(int[] responseTimes, int limit) {
+    int count = 0;
+
+    for (int i = 0; i < responseTimes.length; i++) {
+        if (responseTimes[i] > limit) {
+            count++;
+        }
+    }
+
+    return count;
+}
