@@ -364,3 +364,9 @@ FROM api_logs
 WHERE status_code BETWEEN 200 AND 299
   AND response_time_ms > 1000
 ORDER BY response_time_ms DESC;
+
+SELECT id, status_code, response_time_ms
+FROM api_logs
+WHERE status_code BETWEEN 500 AND 599
+   OR response_time_ms > 1000
+ORDER BY response_time_ms DESC;
