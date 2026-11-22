@@ -383,3 +383,9 @@ public static int countSlowResponses(int[] responseTimes, int limit) {
 
     return count;
 }
+
+SELECT id, endpoint, status_code, response_time_ms
+FROM api_logs
+WHERE endpoint = '/api/orders'
+  AND (status_code BETWEEN 500 AND 599 OR response_time_ms > 1000)
+ORDER BY response_time_ms DESC;
