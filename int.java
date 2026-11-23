@@ -407,3 +407,9 @@ public static boolean isHttpError(int statusCode) {
     return statusCode >= 400 && statusCode <= 499
         || statusCode >= 500 && statusCode <= 599;
 }
+
+
+SELECT COUNT(*) AS error_count
+FROM api_logs
+WHERE endpoint = '/api/orders'
+  AND status_code BETWEEN 500 AND 599;
