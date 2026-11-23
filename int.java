@@ -389,3 +389,15 @@ FROM api_logs
 WHERE endpoint = '/api/orders'
   AND (status_code BETWEEN 500 AND 599 OR response_time_ms > 1000)
 ORDER BY response_time_ms DESC;
+
+
+public static boolean isResponseValid(int statusCode, int responseTime, int limit) {
+    return statusCode >= 200
+            && statusCode <= 299
+            && responseTime <= limit;
+}
+
+
+public static boolean isClientError(int statusCode) {
+    return statusCode >= 400 && statusCode <= 499;
+}
