@@ -401,3 +401,9 @@ public static boolean isResponseValid(int statusCode, int responseTime, int limi
 public static boolean isClientError(int statusCode) {
     return statusCode >= 400 && statusCode <= 499;
 }
+
+
+public static boolean isHttpError(int statusCode) {
+    return statusCode >= 400 && statusCode <= 499
+        || statusCode >= 500 && statusCode <= 599;
+}
