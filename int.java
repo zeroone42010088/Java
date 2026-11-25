@@ -413,3 +413,11 @@ SELECT COUNT(*) AS error_count
 FROM api_logs
 WHERE endpoint = '/api/orders'
   AND status_code BETWEEN 500 AND 599;
+
+  <order id="19">
+  <status>paid</status>
+  <items>
+    <item>keyboard</item>
+    <item>mouse</item>
+  </items>
+</order>
